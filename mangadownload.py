@@ -33,6 +33,8 @@ class MangaCreeper:
         response = self.get_one_page(url,self.headers)
         html = response.text
         result = re.findall(pattern, html)
+        if not result:
+            return False
         # path = path1 + result[0]
         i=1
         path = getPath(i,result[0])
