@@ -113,8 +113,10 @@ class MangaCreeper:
         name = self.getName(basicurl)
         for i in range(Begin,End):
             url = basicurl + str(i)
-            self.downwords(url,i,Begin,End,name)
-
+            try:
+                self.downwords(url,i,Begin,End,name)
+            except:
+                pass
 
 if __name__ == '__main__':
     MC = MangaCreeper()

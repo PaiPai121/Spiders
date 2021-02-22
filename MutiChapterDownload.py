@@ -1,18 +1,12 @@
 from mangadownload import MangaCreeper
 MC = MangaCreeper()
 
-def download(begin,end):
-    try:
-        MC.mainDownload(2,begin,end)
-        return True
-    except:
-        return True
 
-for i in range(5,10):
+
+for i in range(0,2):
     begin = i*100 + 1
     end = begin + 100
-    while not download(begin,end):
-        pass
+    MC.mainDownload(39,begin,end)
 
 
 
