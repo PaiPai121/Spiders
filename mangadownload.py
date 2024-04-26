@@ -109,7 +109,7 @@ class MangaCreeper:
         :param Begin: 起始章节
         :param End: 结束章节
         """
-        basicurl = 'https://www.fzdm.com/manhua/'+str(mangaID)+'/'
+        basicurl = 'https://www.fzdm.net/manhua/'+str(mangaID)+'/'
         name = self.getName(basicurl)
         for i in range(Begin,End):
             url = basicurl + str(i)
@@ -120,4 +120,4 @@ class MangaCreeper:
 
 if __name__ == '__main__':
     MC = MangaCreeper()
-    MC.mainDownload(2, 901, 1000)
+    MC.mainDownload(2, 930, 1050)
